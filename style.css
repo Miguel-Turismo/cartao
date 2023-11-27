@@ -1,0 +1,100 @@
+/*
+
+    seletor{
+        propriedade:valor;
+    }
+
+*/
+
+body{
+    /*  
+    o arial só existe no Windows, se for usar em outro
+    navegador como mac, android ele não existe.
+    por isso, o programa vai buscar a primeira, Arial, depois
+    a seguinte Helvetica. Por último uma fonte de fontes.
+    sans-serif e uma familia de fontes.
+    Usando uma fonte Roboto, que pegamos no Google fonts, nós conseguimos
+    escolher uma fonte universal para qualquer tipo de navegador. 
+    Vamos ter que copiar a fonte do google e copiar tanto para o index,
+    como para o css. */
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: #222831;  
+}
+
+div{
+    background-color: #eee; /*cor de fundo*/
+    width: 340px; /*largura*/
+    border-radius: 10px;
+
+/* margin auto nas laterais faz com que a div seja centralizada  */
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+
+    /* espaçamento interno */
+    padding: 30px;
+    text-align: center;
+}
+img{
+    margin-bottom: 30px;
+    border: 5px #222831 solid;
+    border-radius: 50%;
+
+}
+h1{
+    color: #393e46; /*cor do texto*/
+    font-size: 32px;  /*tamanho do texto*/
+    margin: 0;
+}
+
+h2{
+    color: #222831;
+    font-size: 20px;
+    margin: 0;
+}
+
+p{
+    color: gray;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+
+}
+/* estou formatando os links dentro da lista UL quem estiver
+fora ele nao vai pegar   */
+ul a{
+    text-decoration: none;
+    background-color: #393e46;
+    color: ffffff;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius:3px;
+}
+ul a:hover{
+    background-color: #000000;
+}
+id link{
+    color: #222831;
+}
+#link:houver{
+    font-style: italic;
+}
+/* SE A TELA FOR DE ATÉ 500PX  */
+@media screen and (max-width: 500px) {
+    div {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+} 
+
